@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(215, 25%, 27%);
+  --muted: hsl(220, 13%, 97%);
+  --muted-foreground: hsl(215, 16%, 47%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(215, 25%, 27%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(215, 25%, 27%);
+  --border: hsl(220, 13%, 91%);
+  --input: hsl(220, 13%, 91%);
+  --primary: hsl(215, 25%, 27%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(215, 16%, 47%);
+  --secondary-foreground: hsl(215, 25%, 27%);
+  --accent: hsl(142, 76%, 36%);
+  --accent-foreground: hsl(0, 0%, 100%);
+  --destructive: hsl(0, 84%, 60%);
+  --destructive-foreground: hsl(0, 0%, 100%);
+  --ring: hsl(215, 25%, 27%);
+  --radius: 0.5rem;
+  --warning: hsl(0, 84%, 60%);
+  --success: hsl(142, 76%, 36%);
+  --chart-1: hsl(142, 76%, 36%);
+  --chart-2: hsl(0, 84%, 60%);
+  --chart-3: hsl(217, 91%, 60%);
+  --chart-4: hsl(262, 83%, 58%);
+  --chart-5: hsl(45, 93%, 47%);
+}
+
+.dark {
+  --background: hsl(224, 71%, 4%);
+  --foreground: hsl(213, 31%, 91%);
+  --muted: hsl(223, 47%, 11%);
+  --muted-foreground: hsl(215, 16%, 47%);
+  --popover: hsl(224, 71%, 4%);
+  --popover-foreground: hsl(213, 31%, 91%);
+  --card: hsl(224, 71%, 4%);
+  --card-foreground: hsl(213, 31%, 91%);
+  --border: hsl(216, 34%, 17%);
+  --input: hsl(216, 34%, 17%);
+  --primary: hsl(213, 31%, 91%);
+  --primary-foreground: hsl(215, 25%, 27%);
+  --secondary: hsl(216, 34%, 17%);
+  --secondary-foreground: hsl(213, 31%, 91%);
+  --accent: hsl(142, 76%, 36%);
+  --accent-foreground: hsl(0, 0%, 100%);
+  --destructive: hsl(0, 63%, 31%);
+  --destructive-foreground: hsl(213, 31%, 91%);
+  --ring: hsl(216, 34%, 17%);
+  --warning: hsl(0, 84%, 60%);
+  --success: hsl(142, 76%, 36%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer utilities {
+  .text-primary {
+    color: var(--primary);
+  }
+  
+  .text-secondary {
+    color: var(--secondary);
+  }
+  
+  .text-accent {
+    color: var(--accent);
+  }
+  
+  .text-warning {
+    color: var(--warning);
+  }
+  
+  .text-success {
+    color: var(--success);
+  }
+  
+  .bg-accent {
+    background-color: var(--accent);
+  }
+  
+  .bg-warning {
+    background-color: var(--warning);
+  }
+  
+  .bg-success {
+    background-color: var(--success);
+  }
+  
+  .bg-muted {
+    background-color: var(--muted);
+  }
+}
